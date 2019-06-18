@@ -19,6 +19,7 @@
 
 
 ## Interpreter (shebang) and character encoding
+
 Use these as the first lines in your module:
 ```python
 #!/usr/bin/env python3
@@ -65,5 +66,10 @@ Here are some example calls. Use `logger.exception()` in an outer `except` block
     except:
         logger.exception(f"Error during calculation for batch_index={batch_index} uuid={uuid}")
 ```
+
+## Editor/IDE
+
+* [PyCharm](https://www.jetbrains.com/pycharm/)
+* vim
 
 
