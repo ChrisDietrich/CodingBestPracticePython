@@ -21,7 +21,10 @@ Use [Python logging](https://docs.python.org/3/library/logging.html) instead of 
 ```python
 # Initialize logging
 import os, logging
+# Each log line includes the date and time, the log level, the current function and the message
 formatter = logging.Formatter('%(asctime)s %(levelname)-8s %(funcName)-30s %(message)s')
+# The log file is the same as the module name plus the suffix ".log"
+# i.e.: calculate.py -> calculate.py.log
 fh = logging.FileHandler("%s.log" % (os.path.basename(__file__)))
 sh = logging.StreamHandler()
 fh.setLevel(logging.DEBUG)      # set the log level for the log file
