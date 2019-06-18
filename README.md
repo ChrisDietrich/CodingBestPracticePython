@@ -4,6 +4,17 @@
 * Use [f-strings](https://www.python.org/dev/peps/pep-0498/) where appropriate
 
 
+## Interpreter (shebang) and character encoding
+Use these as the first lines in your module:
+```python
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+"""
+Calculates the ColorHashes for each entry in the urlscan database table.
+"""
+```
+
 ## Logging
 
 Use [Python logging](https://docs.python.org/3/library/logging.html) instead of `print`. Add this to the top of your module and use `logging.info(...)` and similar to provide information about what is being done:
