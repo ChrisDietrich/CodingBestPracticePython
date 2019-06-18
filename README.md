@@ -2,6 +2,20 @@
 
 * Target Python 3, not Python 2
 * Use [f-strings](https://www.python.org/dev/peps/pep-0498/) where appropriate
+* Code style: Follow [PEP 8](https://www.python.org/dev/peps/pep-0008/) when sensible.
+* Configure your editor to use **4 spaces** when pressing the tabulator key
+* Limit lines to approx. 100 characters
+* Naming
+  * Variables, functions, methods, packages, modules
+    * `lower_case_with_underscores`
+  * Classes and Exceptions
+    * `CapWords`
+  * Protected methods and internal functions
+    * `_single_leading_underscore(self, ...)`
+  * Private methods
+    * `__double_leading_underscore(self, ...)`
+  * Constants
+    * `ALL_CAPS_WITH_UNDERSCORES`
 
 
 ## Interpreter (shebang) and character encoding
