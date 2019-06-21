@@ -6,7 +6,7 @@
   ```python
   message = f"Image with uuid={uuid} has color_hash={color_hash} as computed by calculator={str(calculatorInstance)}"
   ```
-* Code style: Follow [PEP 8](https://www.python.org/dev/peps/pep-0008/) when sensible.
+* Code style: Follow [PEP 8](https://www.python.org/dev/peps/pep-0008/) where sensible
 * Configure your editor to use **4 spaces** when pressing the tabulator key
 * Limit lines to approx. 100 to 120 characters
 * Naming
