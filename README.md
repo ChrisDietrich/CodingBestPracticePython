@@ -3,9 +3,9 @@
 * Target Python 3, not Python 2
 * Use [f-strings](https://www.python.org/dev/peps/pep-0498/) where appropriate
   * Example 
-```python
-message = f"Image with uuid={uuid} has color_hash={color_hash} as computed by calculator={str(calculatorInstance)}"
-```
+  ```python
+  message = f"Image with uuid={uuid} has color_hash={color_hash} as computed by calculator={str(calculatorInstance)}"
+  ```
 * Code style: Follow [PEP 8](https://www.python.org/dev/peps/pep-0008/) when sensible.
 * Configure your editor to use **4 spaces** when pressing the tabulator key
 * Limit lines to approx. 100 characters
