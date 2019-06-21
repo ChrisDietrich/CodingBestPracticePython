@@ -8,7 +8,7 @@
   ```
 * Code style: Follow [PEP 8](https://www.python.org/dev/peps/pep-0008/) when sensible.
 * Configure your editor to use **4 spaces** when pressing the tabulator key
-* Limit lines to approx. 100 characters
+* Limit lines to approx. 100 to 120 characters
 * Naming
   * Variables, functions, methods, packages, modules
     * `lower_case_with_underscores`
