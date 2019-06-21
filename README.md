@@ -1,13 +1,13 @@
 # Best Practice when coding in Python
 
-* Target Python 3, not Python 2
+* Target Python 3, not Python 2 (Python 2 will be outdated in 2020)
 * Use [f-strings](https://www.python.org/dev/peps/pep-0498/) where appropriate
   * Example 
   ```python
   message = f"Image with uuid={uuid} has color_hash={color_hash} as computed by calculator={str(calculatorInstance)}"
   ```
 * Code style: Follow [PEP 8](https://www.python.org/dev/peps/pep-0008/) where sensible
-* Configure your editor to use **4 spaces** when pressing the tabulator key
+  * Example: Configure your editor to use **4 spaces** when pressing the tabulator key (do not use the tabulator character)
 * Limit lines to approx. 100 to 120 characters
 * Naming
   * Variables, functions, methods, packages, modules
