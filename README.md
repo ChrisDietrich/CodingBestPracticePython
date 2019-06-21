@@ -67,9 +67,17 @@ Here are some example calls. Use `logger.exception()` in an outer `except` block
         logger.exception(f"Error during calculation for batch_index={batch_index} uuid={uuid}")
 ```
 
-## Editor/IDE
+## Editor/IDE and code check
 
 * [PyCharm](https://www.jetbrains.com/pycharm/)
-* vim
-
+* vim (esp. when editing code on a remote server)
+* Check your code statically (e.g., syntax) with `pylint -E` which will print errors. If it has no output, everything should be fine.
+```bash
+# Install pylint via pip
+[user@host code]$ pip3 install pylint
+...
+# Check the calculate.py module for errors
+[user@host code]$ pylint -E calculate.py
+[user@host code]$
+```
 
