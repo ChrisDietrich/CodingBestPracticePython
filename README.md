@@ -80,6 +80,20 @@ Here are some example calls. Use `logger.exception()` in an outer `except` block
         logger.exception(f"Error during calculation for batch_index={batch_index} uuid={uuid}")
 ```
 
+### Use Child Logger for Each Imported Class or Module
+
+When structuring a python application or a script in multiple modules (or classes), a `ChildLogger` for each
+module should be used.
+
+```python
+
+import logging
+
+class MyClass():
+  def __init__(self):
+    self.__logger = logging.getLogger(__name__).getChild('my_class')
+```
+
 ## Editor/IDE and code check
 
 * [PyCharm](https://www.jetbrains.com/pycharm/)
