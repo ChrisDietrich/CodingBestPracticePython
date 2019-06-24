@@ -40,19 +40,28 @@ Use [Python logging](https://docs.python.org/3/library/logging.html) instead of 
 ```python
 # Initialize logging
 import os, logging
+
 # Each log line includes the date and time, the log level, the current function and the message
 formatter = logging.Formatter('%(asctime)s %(levelname)-8s %(funcName)-30s %(message)s')
+
 # The log file is the same as the module name plus the suffix ".log"
 # i.e.: calculate.py -> calculate.py.log
 fh = logging.FileHandler("%s.log" % (os.path.basename(__file__)))
-sh = logging.StreamHandler()
 fh.setLevel(logging.DEBUG)      # set the log level for the log file
 fh.setFormatter(formatter)
+
+# Additionally, we want to display the current log output on stdout.
+# This can be archived using an additional stream handler.
+sh = logging.StreamHandler()
 sh.setFormatter(formatter)
 sh.setLevel(logging.INFO)       # set the log level for the console
+
 logger = logging.getLogger(__name__)
+
+# Add the Handler to the logger instance.
 logger.addHandler(fh)
 logger.addHandler(sh)
+
 logger.setLevel(logging.DEBUG)
 logger.propagate = False
 ```
