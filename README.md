@@ -1,6 +1,6 @@
 # Best Practice when coding in Python
 
-* Target Python 3, not Python 2 (Python 2 will be outdated in 2020)
+* Target Python 3, not Python 2 (Python 2 has [reached end of life](https://www.python.org/doc/sunset-python-2/) on Jan 1st, 2020)
 * Use [f-strings](https://www.python.org/dev/peps/pep-0498/) where appropriate
   * Example 
   ```python
@@ -32,6 +32,8 @@ Use these as the first lines in your module:
 """
 Calculates the ColorHashes for each entry in the urlscan database table.
 """
+
+import <your imported modules here>
 ```
 
 ## Logging
