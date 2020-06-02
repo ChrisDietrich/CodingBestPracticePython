@@ -87,3 +87,7 @@ Here are some example calls. Use `logger.exception()` in an outer `except` block
 [user@host code]$
 ```
 
+## Operating systems, distributions and Python interpreter environments
+
+* Be aware how the target platform handles Python environments
+  * For example on Red Hat Enterprise Linux 8 (RHEL8) or CentOS 8, follow the guidance described in this [blog](https://developers.redhat.com/blog/2018/11/14/python-in-rhel-8/)
